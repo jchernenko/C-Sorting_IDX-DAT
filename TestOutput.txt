@@ -1,0 +1,82 @@
+Microsoft Windows [Version 10.0.19045.4170]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Default.DESKTOP-QHS9E07>cd desktop\Assign08
+
+C:\Users\Default.DESKTOP-QHS9E07\Desktop\Assign08>gcc -o index.exe index.c
+
+C:\Users\Default.DESKTOP-QHS9E07\Desktop\Assign08>index.exe accountss.dat account.idx
+Error opening data file 'accountss.dat'
+
+C:\Users\Default.DESKTOP-QHS9E07\Desktop\Assign08>index.exe accounts.dat accounts.idx
+Index file 'accounts.idx' created successfully.
+
+C:\Users\Default.DESKTOP-QHS9E07\Desktop\Assign08>gcc -o display.exe display.c
+
+C:\Users\Default.DESKTOP-QHS9E07\Desktop\Assign08>display.exe accountss.dat accounts.idx
+Error - data file 'accountss.dat' does not exist.
+
+C:\Users\Default.DESKTOP-QHS9E07\Desktop\Assign08>display.exe accounts.dat accountss.idx
+Error - index file 'accountss.idx' does not exist.
+
+C:\Users\Default.DESKTOP-QHS9E07\Desktop\Assign08>display.exe accounts.dat accounts.idx
+
+Display Options:
+1) Natural Order
+2) Account Balance Descending
+3) Exit
+Enter Choice: 4
+Invalid choice. Please try again.
+
+Display Options:
+1) Natural Order
+2) Account Balance Descending
+3) Exit
+Enter Choice: A
+Error reading input. Please enter a number.
+
+Display Options:
+1) Natural Order
+2) Account Balance Descending
+3) Exit
+Enter Choice: 1
+
+AccountNumber FirstName   LastName   AccountBalance LastPaymentAmount
+---------------------------------------------------------------------
+1001          Kramer      Cosmo             5827.48          1500.00
+1002          Jerry       Seinfeld          7500.00          1200.00
+1003          Elaine      Benes             4827.90           900.00
+1004          George      Constanza         3200.00           600.00
+1005          Homer       Simpson           1422.37           250.00
+1006          Marge       Simpson           3325.48           300.00
+1007          Bart        Simpson            980.50            50.00
+1008          Lisa        Simpson            887.25            30.00
+1009          Maggie      Simpson              0.00             0.00
+1010          Ned         Flanders         18600.00          2000.00
+
+Display Options:
+1) Natural Order
+2) Account Balance Descending
+3) Exit
+Enter Choice: 2
+
+AccountNumber FirstName   LastName   AccountBalance LastPaymentAmount
+---------------------------------------------------------------------
+1010          Ned         Flanders         18600.00          2000.00
+1002          Jerry       Seinfeld          7500.00          1200.00
+1001          Kramer      Cosmo             5827.48          1500.00
+1003          Elaine      Benes             4827.90           900.00
+1006          Marge       Simpson           3325.48           300.00
+1004          George      Constanza         3200.00           600.00
+1005          Homer       Simpson           1422.37           250.00
+1007          Bart        Simpson            980.50            50.00
+1008          Lisa        Simpson            887.25            30.00
+1009          Maggie      Simpson              0.00             0.00
+
+Display Options:
+1) Natural Order
+2) Account Balance Descending
+3) Exit
+Enter Choice: 3
+
+C:\Users\Default.DESKTOP-QHS9E07\Desktop\Assign08>
